@@ -148,7 +148,7 @@ class JobManager(models.Manager):
 
 class Job(models.Model):
     created_by = models.ForeignKey(User, related_name='created_job', on_delete=models.CASCADE)
-    added_by = models.ForeignKey(User, related_name='added_jobs', null=True)
+    added_by = models.ForeignKey(User, related_name='added_jobs', null=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=20)
     description = models.CharField(max_length=255)
     location = models.CharField(max_length=255)

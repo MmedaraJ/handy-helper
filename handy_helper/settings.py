@@ -27,7 +27,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.98.127.84', 'ec2-3-98-127-84.ca-central-1.compute.amazonaws.com']
+ALLOWED_HOSTS = ['35.183.117.204', 'ec2-35-183-117-204.ca-central-1.compute.amazonaws.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
